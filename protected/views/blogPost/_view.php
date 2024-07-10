@@ -1,0 +1,28 @@
+<?php
+/* @var $this BlogPostController */
+/* @var $data BlogPost */
+?>
+
+<div class="view">
+
+    <b><?php echo CHtml::encode($data->getAttributeLabel('title')); ?>:</b>
+    <?php echo CHtml::link(CHtml::encode($data->title), array('view', 'id' => $data->id)); ?>
+    <br />
+
+    <b><?php echo CHtml::encode($data->getAttributeLabel('content')); ?>:</b>
+    <?php echo CHtml::encode($data->content); ?>
+    <br />
+
+    <b><?php echo CHtml::encode($data->getAttributeLabel('is_public')); ?>:</b>
+    <?php echo CHtml::encode($data->is_public ? 'Yes' : 'No'); ?>
+    <br />
+
+    <b><?php echo CHtml::encode($data->getAttributeLabel('created_at')); ?>:</b>
+    <?php echo CHtml::encode($data->created_at); ?>
+    <br />
+
+    <b><?php echo CHtml::encode($data->getAttributeLabel('updated_at')); ?>:</b>
+    <?php echo CHtml::encode($data->updated_at); ?>
+    <br />
+
+</div>
